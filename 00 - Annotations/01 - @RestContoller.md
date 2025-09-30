@@ -34,3 +34,9 @@ Hello, Spring Boot!
 
 
 Without @RestController, you’d have to manually add @ResponseBody to each method.
+
+🔹 When to use
+
+Use @RestController when you are building a REST API (JSON/XML responses).
+
+Use plain @Controller if you want to return views (HTML pages).

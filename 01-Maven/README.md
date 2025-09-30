@@ -6,6 +6,8 @@ Automates the build process (compiling code, packaging into JAR/WAR, running tes
 
 Manages project dependencies (downloads and includes external libraries automatically).
 
+
+
 Provides a standard structure for projects.
 
 🔹 Core Concepts
@@ -29,3 +31,7 @@ Makes projects easier to manage, share, and scale.
 Integrates well with CI/CD pipelines and tools like Jenkins, GitLab CI, etc.
 
 👉 In short: Maven is to Java what npm is to Node.js or pip is to Python—but it also handles project building and lifecycle management, not just dependencies.
+
+![alt text](Maven.png)
+
+
