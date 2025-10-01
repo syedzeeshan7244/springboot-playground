@@ -11,7 +11,6 @@ It’s basically @Controller + @ResponseBody combined.
 @ResponseBody tells Spring that the return value of methods should be written directly to the HTTP response body (usually JSON or XML).
 
 <pre> ```java 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,7 +22,6 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-
 ``` </pre>
 
 📌 What happens here:
@@ -31,7 +29,6 @@ public class HelloController {
 When you hit http://localhost:8080/hello, you get plain text response:
 
 Hello, Spring Boot!
-
 
 Without @RestController, you’d have to manually add @ResponseBody to each method.
 
