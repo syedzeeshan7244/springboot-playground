@@ -1,26 +1,30 @@
-🌱 What is IoC (Inversion of Control)?
+🌱 *** What is IoC (Inversion of Control)? ***
 
 Normally, in traditional Java programming, your classes create and control their own dependencies using new.
 
-With IoC, this control is inverted: instead of your code creating objects, the Spring IoC Container creates and manages them, then injects them where needed.
+With IoC, this control is inverted: instead of your code creating objects, ***the Spring IoC Container creates and manages them***, then injects them where needed.
 
 👉 In simple words:
+
 “You don’t create objects manually; Spring creates and provides them to you.”
 
 
 ![alt text](<Screenshot 2025-09-30 at 12.58.24 AM.png>)
 
 🔹 Example Without IoC
+<pre> ``` 
 
 class Engine {}
 
 class Car {
     private Engine engine = new Engine(); // Car creates its own Engine
 }
+``` <pre> 
 
 ❌ Here, Car is tightly coupled to Engine. Hard to test and replace with a different engine.
 
-🔹 Example With IoC (Dependency Injection)
+🔹 Example With IoC (Dependency Injection) 
+<pre> ``` 
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -36,7 +40,7 @@ class Car {
         this.engine = engine;
     }
 }
-
+``` <pre> 
 
 ✅ Now, Spring’s IoC container creates the Engine object and injects it into Car.
 
@@ -46,7 +50,7 @@ Easy to replace Engine with another type (like ElectricEngine) without modifying
 
 🔹 How IoC works in Spring
 
-Spring uses an IoC Container (like ApplicationContext or BeanFactory).
+Spring uses an IoC Container ( like ApplicationContext or BeanFactory ).
 
 The container:
 
@@ -58,5 +62,11 @@ Injects dependencies where required (@Autowired, @Value, etc.).
 
 Manages the lifecycle of beans (singleton, prototype, etc.).
 
-👉 In short:
-IoC = Giving control of object creation and dependency management to the Spring Container instead of doing it manually in your code.
+👉 In short:IoC = Giving control of object creation and dependency management to the Spring Container instead of doing it manually in your code.
+
+🚀 Benefits of IoC
+
+* Loose coupling → classes depend on abstractions, not implementations.
+* Easier testing → you can inject mock objects.
+* Better maintainability → easy to replace or upgrade components.
+* Centralized configuration → dependencies managed in one place.

@@ -1,8 +1,6 @@
 The @GetMapping annotation in Spring Boot / Spring MVC is used to handle HTTP GET requests for a specific URL.
 
-
-
-🔹 What it does
+🔹 ***What it does***
 Maps a GET request (like when you open a link in a browser) to a controller method.
 It’s a shortcut for @RequestMapping(method = RequestMethod.GET).
 
