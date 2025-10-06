@@ -10,7 +10,7 @@ It’s basically @Controller + @ResponseBody combined.
 
 @ResponseBody tells Spring that the return value of methods should be written directly to the HTTP response body (usually JSON or XML).
 
-<pre> ```java 
+```java 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,7 +22,7 @@ public class HelloController {
         return "Hello, Spring Boot!";
     }
 }
-``` </pre>
+```
 
 📌 What happens here:
 
@@ -37,3 +37,16 @@ Without @RestController, you’d have to manually add @ResponseBody to each meth
 Use @RestController when you are building a REST API (JSON/XML responses).
 
 Use plain @Controller if you want to return views (HTML pages).
+
+***FAQ***
+
+🌟 What is @RestController? / What does @RestController do ?
+
+@RestController is a Spring annotation used to create RESTful web services.
+It tells Spring that the class:
+Is a controller (just like @Controller), and
+
+Every method inside will return data directly as a response body (usually JSON) instead of rendering a view (like JSP or HTML).
+
+***In short:***
+@RestController makes your class a REST API endpoint provider — Spring automatically converts method return values into HTTP responses (usually JSON).
