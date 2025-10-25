@@ -1,0 +1,71 @@
+🚀 *** What is @SpringBootApplication ? ***
+
+It’s a meta-annotation in Spring Boot — meaning it combines several commonly used annotations into one.
+
+When you put it on your main class, like:
+
+``java
+
+@SpringBootApplication
+public class MyApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApplication.class, args);
+    }
+}
+``
+
+Spring Boot automatically configures, scans, and initializes your app.
+
+That means it is equivalent to writing three annotations together:
+
+@SpringBootConfiguration
+@EnableAutoConfiguration
+@ComponentScan
+
+1️⃣ ***@SpringBootConfiguration***
+
+
+A specialized form of @Configuration.
+
+Marks this class as a source of bean definitions.
+
+It tells Spring: “You can use this class to register beans with the application context.”
+
+2️⃣ ***@EnableAutoConfiguration***
+
+The “magic” part of Spring Boot ✨
+
+Tells Spring Boot to automatically configure beans based on:
+
+What’s on the classpath (e.g. spring-boot-starter-web → configures Tomcat + DispatcherServlet)
+
+Existing beans (so it doesn’t override your custom ones)
+
+Property settings (from application.properties)
+
+Example:
+If you add spring-boot-starter-data-jpa, Spring Boot will:
+
+Create a DataSource
+
+Configure EntityManagerFactory
+
+Set up JpaRepositories automatically
+
+3️⃣ ***@ComponentScan***
+
+Scans the current package (and sub-packages) for Spring components:
+
+@Component
+
+@Service
+
+@Repository
+
+@Controller
+
+@RestController
+
+@Configuration
+
+That’s why your main class should usually be in the root package, so Spring can discover all sub-packages.

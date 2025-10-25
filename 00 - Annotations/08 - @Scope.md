@@ -1,4 +1,4 @@
-🔹 What is @Scope?
+🔹 ***What is @Scope?***
 
 By default, Spring beans are singleton → only one instance of the bean is created and shared.
 
@@ -17,16 +17,16 @@ public class Engine {
 
 Here, every time Spring injects Engine, it will create a new instance instead of reusing the same one.
 
-🔹 Available Scopes in Spring Boot
+🔹 ***Available Scopes in Spring Boot***
 
-singleton (default)
+***singleton (default)***
 
 One instance per Spring container.
 
 @Scope("singleton")
 
 
-prototype
+***prototype***
 
 A new bean instance is created every time it’s requested.
 

@@ -1,4 +1,4 @@
-🔹 What is Lazy Initialization?
+🔹 ***What is Lazy Initialization?***
 
 By default, Spring Boot uses Eager Initialization:
 
@@ -12,7 +12,8 @@ Beans are created only when they are first needed (requested by another bean or 
 
 ![alt text](<Screenshot 2025-09-30 at 12.27.29 PM.png>)
 
-🔹 How to Enable Lazy Initialization in Spring Boot
+🔹 ***How to Enable Lazy Initialization in Spring Boot***
+
 1️⃣ Globally (for all beans)
 
 Add this property in application.properties:

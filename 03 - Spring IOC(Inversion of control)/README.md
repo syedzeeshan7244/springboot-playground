@@ -6,12 +6,20 @@ With IoC, this control is inverted: instead of your code creating objects, ***th
 
 👉 In simple words:
 
-“You don’t create objects manually; Spring creates and provides them to you.”
+“***You don’t create objects manually; Spring creates and provides them to you.***”
+
+"*** The approach of outsourcing the construction and management of objects ***"
+
+***Spring Container Primary function**
+
+1. Create and manage objects (IOC)
+2. Inject object dependencies (Dependency injection)
 
 
 ![alt text](<Screenshot 2025-09-30 at 12.58.24 AM.png>)
 
 🔹 Example Without IoC
+
 <pre> ``` 
 
 class Engine {}
@@ -25,6 +33,7 @@ class Car {
 
 🔹 Example With IoC (Dependency Injection) 
 <pre> ``` 
+
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,12 +42,14 @@ class Engine {}
 
 @Component
 class Car {
+    
     private Engine engine;
 
     @Autowired
     public Car(Engine engine) {   // Spring injects Engine
         this.engine = engine;
     }
+
 }
 ``` <pre> 
 

@@ -29,8 +29,6 @@ class Car {
 
 Spring doesn’t know whether to use PetrolEngine or DieselEngine.
 
-
-
 With @Qualifier → Clear choice
 @Component
 class PetrolEngine implements Engine {}
