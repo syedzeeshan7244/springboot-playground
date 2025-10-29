@@ -7,6 +7,7 @@ When you put it on your main class, like:
 ``java
 
 @SpringBootApplication
+
 public class MyApplication {
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);

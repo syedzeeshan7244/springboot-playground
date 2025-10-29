@@ -7,6 +7,7 @@ It helps developers build secure, scalable, testable, and maintainable apps by t
 Think of it as a toolbox with lots of ready-made tools for Java development.
 
 🔹 Core Features of Spring
+
 1. Inversion of Control (IoC) / Dependency Injection (DI)
 
 Normally, classes create their own objects (dependencies).

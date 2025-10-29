@@ -13,8 +13,8 @@ With IoC, this control is inverted: instead of your code creating objects, ***th
 ***Spring Container Primary function**
 
 1. Create and manage objects (IOC)
-2. Inject object dependencies (Dependency injection)
 
+2. Inject object dependencies  ( Dependency injection ) 
 
 ![alt text](<Screenshot 2025-09-30 at 12.58.24 AM.png>)
 

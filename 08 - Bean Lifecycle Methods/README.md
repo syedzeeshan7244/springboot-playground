@@ -1,4 +1,4 @@
-🌱 ***Spring Bean Lifecycle**
+🌱 ***Spring Bean Lifecycle***
 
 A Spring bean goes through several stages from ***creation → initialization → destruction.***
 Spring manages all of this inside the ApplicationContext (IoC Container).
